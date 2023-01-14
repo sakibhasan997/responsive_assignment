@@ -10,15 +10,38 @@
 }
 
 /* basice code */
-body {}
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+}
 
 header {
     background: rgba(255, 144, 14, 0.1);
 }
 
-main {}
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+footer {
+    max-width: 1440px;
+    margin: 0 auto;
+}
 
 /* primary button  */
+.btn:hover .primary_btn {
+    background-color: black;
+    color: red;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover .primary_btn a {
+    color: red;
+    transition: all 0.3s ease;
+}
+
 .primary_btn {
     padding: 20px 25px;
     border: 0;
@@ -112,3 +135,368 @@ nav ul li:hover a {
 }
 
 .banner_img img {}
+
+/* features section styles */
+.hide {
+    display: none;
+}
+
+.features_container {
+    padding: 85px 0px;
+}
+
+.feature {
+    display: flex;
+}
+
+.feature_img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.feature_images {}
+
+.feature_images img {}
+
+.feature_discriiption {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 75px
+}
+
+.feature_title {
+    width: 537px;
+}
+
+.feature_discriiption h2 {}
+
+.feature_discriiption h2 .black_color {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    color: #131313;
+
+}
+
+.feature_discriiption h2 .orange_color {
+
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    color: #FF900E;
+}
+
+.feature_discriiption h2 .gray_color {
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 53px;
+    color: #727272;
+}
+
+.feature_discriiption p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+    padding: 30px 0px;
+}
+
+/* airchitect section styles */
+.airchitect_container {
+    margin: 50px 0px;
+}
+
+.airchitect {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+}
+
+.airchitect_discription {
+    width: 586px;
+}
+
+.airchitect_title {}
+
+.airchitect_title h3 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    color: #131313;
+    border-left: 5px solid #FF900E;
+    padding-left: 25px;
+    margin-bottom: 25px;
+}
+
+.airchitect_title p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+}
+
+.airchitect_skills {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+.airchitect_skill {
+    padding: 30px 30px;
+}
+
+.airchitect_skill h5 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: #131313;
+    padding-bottom: 10px;
+}
+
+.airchitect_skill p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.airchitect_img {}
+
+.airchitect_images {}
+
+.airchitect_images img {}
+
+.airchitect_text {
+    width: 342px;
+    height: 200px;
+    background: #FF900E;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -70px;
+    right: 460px;
+}
+
+.airchitect_text span {}
+
+.airchitect_text h1 {
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 70px;
+    color: #FFFFFF;
+}
+
+.airchitect_text h3 {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 40px;
+    color: #FFFFFF;
+}
+
+/* awards section styles  */
+
+.awards_container {
+    margin: 150px 0px;
+}
+
+.award {}
+
+.award_title {}
+
+.award_title h3 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    color: #131313;
+    padding-bottom: 25px;
+}
+
+.award_title p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+}
+
+.award_iteams {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.award_iteam {
+    width: 241px;
+    height: 241px;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.award_iteam:hover span {
+    transform: scale(1.3);
+    transition: .3s;
+    cursor: pointer;
+}
+
+.award_iteam img {}
+
+.award_iteam h1 {
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 53px;
+    color: #424242;
+    padding: 10px 0px;
+}
+
+.award_iteam p {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: #727272;
+}
+
+/* brands section styles  */
+.brand_section {}
+
+.brand {}
+
+.brand_title {
+    width: 542px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.brand_title h2 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    color: #131313;
+    padding-bottom: 25px;
+}
+
+.brand_title p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+
+}
+
+.brand_iteam {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 130px;
+}
+
+.brand_iteam img {}
+
+/* footer section styles  */
+
+footer {
+    width: 100%;
+    height: 100px;
+    background: #FFF4E7;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+
+footer p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #424242;
+    padding-top: 50px;
+}
+/* extra section  */
+.easy_container{}
+
+.easy{}
+
+.easy_title{
+    width: 542px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.easy_title h1{
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    color: #131313;
+    padding-bottom: 25px;
+}
+
+.easy_title p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+}
+
+.easy_discription{
+    display: flex;
+    text-align: center;
+}
+
+.easy_discription span{
+    width: 390px;
+    margin: 0 auto;
+    padding: 0 35px;
+}
+
+.easy_discription span img{}
+
+
+.easy_discription span h2{
+    padding: 15px 0;
+}
+
+.easy_discription span p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+}
+
+. {}
+
+. {}
+
+. {}
+
+. {}
+
+. {}
+
+. {}
+
+. {}
+
+. {}
+
+. {}
+
+. {}
+
+. {}
+
+. {}
+
+. {}
