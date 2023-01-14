@@ -69,7 +69,7 @@ footer {
     padding: 50px 0px;
 }
 
-.logo {}
+
 
 .logo h3 {
     font-weight: 700;
@@ -79,7 +79,7 @@ footer {
 
 }
 
-nav {}
+
 
 nav ul {
     display: flex;
@@ -107,7 +107,7 @@ nav ul li:hover a {
     margin: 0 auto;
 }
 
-.banner {}
+
 
 .banner_title {
     width: 862px;
@@ -134,7 +134,7 @@ nav ul li:hover a {
     padding-bottom: 50px;
 }
 
-.banner_img img {}
+
 
 /* features section styles */
 .hide {
@@ -155,9 +155,7 @@ nav ul li:hover a {
     gap: 25px;
 }
 
-.feature_images {}
 
-.feature_images img {}
 
 .feature_discriiption {
     display: flex;
@@ -170,7 +168,7 @@ nav ul li:hover a {
     width: 537px;
 }
 
-.feature_discriiption h2 {}
+
 
 .feature_discriiption h2 .black_color {
     font-weight: 700;
@@ -219,7 +217,7 @@ nav ul li:hover a {
     width: 586px;
 }
 
-.airchitect_title {}
+
 
 .airchitect_title h3 {
     font-weight: 700;
@@ -267,11 +265,7 @@ nav ul li:hover a {
     line-height: 26px;
 }
 
-.airchitect_img {}
 
-.airchitect_images {}
-
-.airchitect_images img {}
 
 .airchitect_text {
     width: 342px;
@@ -287,7 +281,7 @@ nav ul li:hover a {
     right: 460px;
 }
 
-.airchitect_text span {}
+
 
 .airchitect_text h1 {
     font-weight: 700;
@@ -309,9 +303,7 @@ nav ul li:hover a {
     margin: 150px 0px;
 }
 
-.award {}
 
-.award_title {}
 
 .award_title h3 {
     font-weight: 700;
@@ -351,7 +343,7 @@ nav ul li:hover a {
     cursor: pointer;
 }
 
-.award_iteam img {}
+
 
 .award_iteam h1 {
     font-weight: 600;
@@ -369,9 +361,7 @@ nav ul li:hover a {
 }
 
 /* brands section styles  */
-.brand_section {}
 
-.brand {}
 
 .brand_title {
     width: 542px;
@@ -403,7 +393,7 @@ nav ul li:hover a {
     margin-bottom: 130px;
 }
 
-.brand_iteam img {}
+
 
 /* footer section styles  */
 
@@ -424,18 +414,17 @@ footer p {
     color: #424242;
     padding-top: 50px;
 }
+
 /* extra section  */
-.easy_container{}
 
-.easy{}
 
-.easy_title{
+.easy_title {
     width: 542px;
     margin: 50px auto;
     text-align: center;
 }
 
-.easy_title h1{
+.easy_title h1 {
     font-weight: 700;
     font-size: 45px;
     line-height: 53px;
@@ -443,60 +432,144 @@ footer p {
     padding-bottom: 25px;
 }
 
-.easy_title p{
+.easy_title p {
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
     color: #727272;
 }
 
-.easy_discription{
+.easy_discription {
     display: flex;
     text-align: center;
 }
 
-.easy_discription span{
+.easy_discription span {
     width: 390px;
     margin: 0 auto;
     padding: 0 35px;
 }
 
-.easy_discription span img{}
 
-
-.easy_discription span h2{
+.easy_discription span h2 {
     padding: 15px 0;
 }
 
-.easy_discription span p{
+.easy_discription span p {
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
     color: #727272;
 }
 
-. {}
 
-. {}
 
-. {}
 
-. {}
 
-. {}
 
-. {}
 
-. {}
 
-. {}
 
-. {}
 
-. {}
+/* small device responsive media qurey  */
 
-. {}
+@media only screen and (max-width: 576px) {
 
-. {}
+    /* header section  */
+    .menu_bar {
+        flex-direction: column;
+        margin-left: 60px;
+    }
 
-. {}
+    nav ul {
+        flex-direction: column;
+
+    }
+
+    nav ul li {
+        padding: 5px 35px;
+    }
+
+    .banner_title {
+        width: 100%;
+    }
+
+    .banner_title h2 {
+        font-size: 43px;
+        line-height: 55px;
+    }
+
+    .banner_title p {
+        font-size: 17px;
+        line-height: 33px;
+    }
+
+    .banner_img img {
+        width: 100%;
+    }
+
+    /* feature section  */
+
+    .feature {
+        flex-direction: column;
+    }
+
+    .feature_img {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+
+    .feature_discriiption {
+        align-items: center;
+        text-align: center;
+        padding: 20px 0px;
+    }
+
+    /* airchitect section  */
+    .airchitect {
+        flex-direction: column;
+        position: none;
+    }
+
+    .airchitect_title {
+        margin: 0 20px;
+    }
+
+    .airchitect_images img {
+        width: 100%;
+    }
+
+    .airchitect_text {
+        margin-left: 115px;
+        position: inherit;
+        margin-top: 20px;
+    }
+
+    /* awards section  */
+    .award_title {
+        text-align: center;
+    }
+
+    .award_iteams {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* brands section  */
+    .brand_iteam {
+        flex-direction: column;
+        gap: 30px;
+    }
+    /* extra section  */
+    .easy_discription{
+        flex-direction: column;
+    }
+    /* footer section  */
+    footer p{
+        font-size: 13px;
+        padding-top: 40px;
+    }
+
+}
