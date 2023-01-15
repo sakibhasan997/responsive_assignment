@@ -474,6 +474,9 @@ footer p {
 /* small device responsive media qurey  */
 
 @media only screen and (max-width: 576px) {
+    body{
+        display: inline-block;
+    }
 
     /* header section  */
     .menu_bar {
