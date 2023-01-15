@@ -338,8 +338,8 @@ nav ul li:hover a {
 }
 
 .award_iteam:hover span {
-    transform: scale(1.3);
-    transition: .3s;
+    transform: rotate(360deg);
+    transition: .5s;
     cursor: pointer;
 }
 
